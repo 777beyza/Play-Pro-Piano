@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* align-items height olmadan çalışmaz. */
+}
+
+#piano{
+    height: 290px;
+    padding: 90px 30px 0 30px;
+    border-radius: 15px;
+    background-color:rgb(75, 115, 36)
+}
+
+/* CSS'de "position:relative" özelliği, normal konumuna göre konumlandırılmıştır.
+Relative olarak konumlandırılmış bir etiketin top, bottom, left ve right özelliklerinin ayarlanması,
+normal konumundan uzağa ayarlanmasına neden olacaktır. */
+
+.keys{
+    position: relative;
+}
+
+.white-keys{
+    display: flex;
+}
+.white-key{
+    width: 68px;
+    height: 280px;
+    border-radius: 0 0 5px 5px;
+    border: solid #000 3px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+}
+
+.black-keys{
+    position: relative;
+    display: flex;
+}
+
+.black-key{
+    width: 38px;
+    height: 160px;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    /* border: solid #fff 3px; */
+    background-color: #000;
+    position: absolute;
+
+}
+
+.black-key:nth-child(1){
+    left: 48px;
+}
+
+.black-key:nth-child(2){
+    left: 117px;
+}
+
+.black-key:nth-child(3){
+    left: 253px;
+}
+
+.black-key:nth-child(4){
+    left: 320px;
+}
+
+.black-key:nth-child(5){
+    left: 389px;
+}
+
+.black-key:nth-child(6){
+    left: 525px;
+}
+
+.black-key:nth-child(7){
+    left: 594px;
+}
+
+.black-key:nth-child(8){
+    left: 662px;
+}
+
+.black-key:nth-child(9){
+    left: 797px;
+}
+
+.black-key:nth-child(10){
+    left: 865px;
+}
+
